@@ -8,6 +8,7 @@ export const AppStyling = Styled.div`
     display: flex;
     flex-direction: column;
     justify-items: center;
+    background-color: grey;
 `;
 export const CardStyling = Styled.div`
     padding: 2%;
