@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import Cards from "./components/Card";
-import FollowerCard from "./components/FollowerCard";
+// import FollowerMap from "./components/FollowerMap";
 class App extends React.Component {
   constructor() {
     super();
@@ -37,11 +37,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Github User Card</h1>
-        <div className="user">
-          <h2>User's Profile</h2>
-          <Cards value={this.state.user} />
-        </div>
-        <FollowerCard followerValue={this.state.followers} />
+        <Cards value={this.state.user} followerValue={this.state.followers} />
+        {/* <FollowerMap followerValue={this.state.followers} /> */}
       </div>
     );
   }

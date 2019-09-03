@@ -1,14 +1,14 @@
 import React from "react";
-import Cards from "./Card";
+import FollowerList from "./FollowerList";
 
-const FollowerCard = props => {
+const FollowerMap = props => {
   return (
     <div className="followers">
       <h2>Follower's Profiles</h2>
       {props.followerValue.map(data => (
-        <Cards value={data} />
+        <FollowerList value={data} />
       ))}
     </div>
   );
 };
-export default FollowerCard;
+export default FollowerMap;
