@@ -39,7 +39,7 @@ class App extends React.Component {
       });
   };
 
-  render(user, followers) {
+  render() {
     return (
       <div className="App">
         <h1>Github User Card</h1>
@@ -49,7 +49,7 @@ class App extends React.Component {
         </div>
         <div className="followers">
           <h2>Follower's Profiles</h2>
-          <Cards value={this.state.followers} />
+          {/* <Cards value={this.state.followers} /> */}
         </div>
       </div>
     );

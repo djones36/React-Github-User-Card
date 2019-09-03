@@ -3,14 +3,14 @@ import React from "react";
 const Cards = props => {
   return (
     <div className="card-wrapper">
-      <img></img>
+      <img src={props.value.avatar_url} alt="avatar"></img>
       <div className="cardInfo">
-        <h3>Name</h3>
-        <h4>UserName</h4>
-        <p>Location</p>
-        <p>followers</p>
-        <p>following</p>
-        <p>Bio</p>
+        <h3>Name: {props.value.name}</h3>
+        <p>UserName: {props.value.login}</p>
+        <p>Location: {props.value.location}</p>
+        <p>Followers: {props.value.followers}</p>
+        <p>Following: {props.value.following}</p>
+        <p>Bio: {props.value.bio}</p>
       </div>
     </div>
   );
