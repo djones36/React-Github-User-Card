@@ -1,9 +1,10 @@
 import React from "react";
 import FollowerMap from "./FollowerMap";
+import { CardStyling } from "./Styling";
 //render of card from props
 const Cards = props => {
   return (
-    <div className="user-card">
+    <CardStyling className="user-card">
       <h2>User's Profile</h2>
       <div className="card-wrapper">
         <img src={props.value.avatar_url} alt="avatar"></img>
@@ -17,7 +18,7 @@ const Cards = props => {
         </div>
         <FollowerMap followerValue={props.followerValue} />
       </div>
-    </div>
+    </CardStyling>
   );
 };
 export default Cards;

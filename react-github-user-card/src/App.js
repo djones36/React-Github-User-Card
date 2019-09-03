@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import Cards from "./components/Card";
-// import FollowerMap from "./components/FollowerMap";
+import { AppStyling } from "./components/Styling";
 class App extends React.Component {
   constructor() {
     super();
@@ -35,11 +35,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <AppStyling className="App">
         <h1>Github User Card</h1>
         <Cards value={this.state.user} followerValue={this.state.followers} />
-        {/* <FollowerMap followerValue={this.state.followers} /> */}
-      </div>
+      </AppStyling>
     );
   }
 }
