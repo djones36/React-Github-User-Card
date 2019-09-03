@@ -1,15 +1,15 @@
 import React from "react";
-
+import { ImgStyling, CardStyling, ListStyling } from "./Styling";
 const FollowerList = props => {
   return (
-    <div className="followers">
-      <ul className="followers-list">
+    <CardStyling className="followers">
+      <ListStyling className="followers-list">
         <li>
-          <img src={props.value.avatar_url} alt="avatar"></img>
+          <ImgStyling src={props.value.avatar_url} alt="avatar"></ImgStyling>
         </li>
         <li>{props.value.login}</li>
-      </ul>
-    </div>
+      </ListStyling>
+    </CardStyling>
   );
 };
 
